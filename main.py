@@ -3,12 +3,12 @@ import requests
 import time
 import datetime
 import smtplib
-
+import os
 CONTENT_API = 'https://api.npoint.io/33ec397d16be22f81da9'
 
 
-my_email = "cataptrial@gmail.com"
-password = "ogkilmewyhynbjns"
+my_email = os.environ["email"]
+password = os.environ["password"]
 
 app = Flask(__name__)
 
